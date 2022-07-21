@@ -1,6 +1,20 @@
 .ticket_form {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
     padding: 2rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ticket_body {
+    background-color: whitesmoke;
+    border: solid 1px lightgray;
+    border-radius: 30px;
+    padding: 0.6rem 2rem;
+}
+
+.ticket_body h4 {
+    font-size: 1rem;
+}
+
+#ticket {
+    display: none;
 }

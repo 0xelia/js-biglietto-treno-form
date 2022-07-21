@@ -12,20 +12,69 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <header>
             <h1 class="display-3 text-center">
                 Ecco il prezzo del tuo biglietto
             </h1>
-            <div class="ticket_form">
-                <input type="text" name="username" placeholder="Nome">
-                <input type="text" name="kms" placeholder="Chilometri da percorrere">
-                <select name="age" id="">
-                    <option value="1">Maggiorenne</option>
-                    <option value="0.2">Minorenne</option>
-                    <option value="0.4">Anziano</option>
-                </select>
-                <input type="submit" name="submit" placeholder="Calcola il tuo biglietto" id="button">
+        </header>
+        <section>
+            <div class="container">
+                
+                <div class="ticket_form">
+                    <div class=" ticket_row row row-cols-1 row-cols-md-3 justify-content-center g-5">
+                        <div class="col d-flex justify-content-center">
+                            <input type="text" name="username" placeholder="Nome">
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <input type="text" name="kms" placeholder="Chilometri da percorrere">
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <select name="age" id="">
+                                <option value="1">Maggiorenne</option>
+                                <option value="0.2">Minorenne</option>
+                                <option value="0.4">Anziano</option>
+                            </select>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <input type="submit" name="submit" placeholder="Calcola il tuo biglietto" id="button">
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+
+        <section id="ticket">
+            <div class="container">
+                <div class="row ticket_body row-cols-1 row-cols-md-3">
+                    <div class="col">
+                        <div class="user_data text-center">
+                            <h4>
+                                Nome Passeggiero
+                            </h4>
+                            <p id="ticket_username"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="user_ticketinfo text-center">
+                            <h4>
+                                ID Biglietto
+                            </h4>
+                            <p id="id_ticket"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ticket_subtotal text-center">
+                            <h4>
+                                Subtotale
+                            </h4>
+                            <p id="sale"></p>
+                            <p id="ticket_total"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        
         </div>
     </main>
 

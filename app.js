@@ -23,9 +23,17 @@ let buttonElement = document.getElementById('button')
 buttonElement.addEventListener( 'click', 
 function() {
 
+    let ticketElemnt = document.getElementById('ticket')
+    ticketElemnt.style.display = 'block'
+
     name = document.querySelector('input[name="username"]')
     name = name.value
-    console.log('Username: ' + name)
+    let ticketNameElement = document.getElementById('ticket_username')
+    ticketNameElement.innerHTML = name
+
+    let id = document.getElementById('id_ticket')
+    let random = Math.floor(Math.random()*999999)
+    id.innerHTML = 'ID: ' + random
 
     age = document.querySelector('select[name="age"]')
     age = age.value
@@ -44,7 +52,8 @@ function() {
         sale = floorPrice * saleOver65}
     
     let finalPrice = floorPrice - sale
-    console.log('Prezzo finale: ' + finalPrice) 
+    let ticketTotalElement = document.getElementById('ticket_total')
+    ticketTotalElement.innerHTML = 'Totale: ' + '€' + finalPrice
 
 } )
 
